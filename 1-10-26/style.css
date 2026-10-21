@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff6e5;
+  color: #4a3428;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.video-de-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.midia-do-doce {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.foto-do-doce,
+.video-do-doce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.foto-do-doce {
+  opacity: 1;
+  z-index: 2;
+}
+
+.video-do-doce {
+  opacity: 0;
+  z-index: 1;
+}
+
+.cartao-do-doce:hover .foto-do-doce {
+  opacity: 0;
+}
+
+.cartao-do-doce:hover .video-do-doce {
+  opacity: 1;
+}
+
+.topo-da-pagina {
+  background-color: #c9534b;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  border-bottom: 6px solid #e8a33d;
+}
+
+.titulo-principal {
+  font-size: 2rem;
+}
+
+.frase-do-topo {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.introducao {
+  max-width: 700px;
+  margin: 12px auto;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  background-color: rgba(255, 246, 229, 0.85);
+  border-radius: 10px;
+}
+
+.area-de-adicionar-doce {
+  max-width: 380px;
+  margin: 0 auto 20px auto;
+  padding: 12px 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-top: 4px solid #e8a33d;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-de-adicionar-doce {
+  font-size: 1.1rem;
+  color: #c9534b;
+  margin-bottom: 6px;
+}
+
+.formulario-de-doce label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin: 8px 0 2px 0;
+}
+
+.formulario-de-doce input,
+.formulario-de-doce textarea {
+  width: 100%;
+  padding: 6px 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 2px solid #e0d2bd;
+  border-radius: 6px;
+  color: #4a3428;
+}
+
+.formulario-de-doce input:focus,
+.formulario-de-doce textarea:focus {
+  outline: none;
+  border-color: #e8a33d;
+}
+
+.botao-adicionar-doce {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: white;
+  background-color: #c9534b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botao-adicionar-doce:hover {
+  background-color: #a8403a;
+}
+
+.lista-de-doces {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.cartao-do-doce {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.cartao-do-doce:hover {
+  transform: translateY(-5px);
+}
+
+.foto-do-doce {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  background-color: #eee;
+}
+
+.etiqueta-do-doce {
+  display: inline-block;
+  margin: 8px 12px 0 12px;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+  background-color: #c9534b;
+  border-radius: 10px;
+}
+
+.nome-do-doce {
+  font-size: 1.1rem;
+  color: #c9534b;
+  padding: 8px 12px 2px 12px;
+}
+
+.descricao-do-doce {
+  padding: 0 12px 12px 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.rodape-da-pagina {
+  background-color: #4a3428;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
