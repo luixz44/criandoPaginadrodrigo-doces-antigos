@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doces Antigos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <video class="video-de-fundo" autoplay muted loop >
+    <source src="https://video-previews.elements.envatousercontent.com/b9c6c5f9-4b48-4153-9586-7ce0d3d0f2b2/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
+  </video>
+
+  <header class="topo-da-pagina">
+    <h1 class="titulo-principal">Doces Antigos</h1>
+    <p class="frase-do-topo">doces antigos da epoca que o rodrigo tinha 3 anos</p>
+  </header>
+
+  <section class="introducao">
+    <p>Aqui voce pode adicionar mais Doces
+    </p>
+  </section>
+
+  <section class="area-de-adicionar-doce">
+    <h2 class="titulo-de-adicionar-doce">Adicionar um doce</h2>
+
+    <form class="formulario-de-doce" id="formulario-de-doce">
+      <label for="campo-nome-do-doce">Nome do doce</label>
+      <input type="text" id="campo-nome-do-doce" placeholder="Ex: Maria-mole" required>
+
+      <label for="campo-link-da-foto">Link da foto</label>
+      <input type="text" id="campo-link-da-foto" placeholder="Ex: https://site.com/foto.jpg ou fotos/maria-mole.jpg" required>
+
+      <label for="campo-link-do-video">Link do vídeo (opcional)</label>
+      <input type="text" id="campo-link-do-video" placeholder="Ex: videos/1.mp4 ou https://site.com/video.mp4">
+
+      <label for="campo-descricao-do-doce">Descrição</label>
+      <textarea id="campo-descricao-do-doce" rows="2" placeholder="Fale um pouco sobre o doce"></textarea>
+
+      <button type="submit" class="botao-adicionar-doce">Adicionar doce</button>
+    </form>
+  </section>
+
+  <main class="lista-de-doces" id="lista-de-doces"></main>
+
+  <footer class="rodape-da-pagina">
+    <p>Feito po luiz e kaue(uso da ia na lista )</p>
+  </footer>
+
+  <script src="doces.js"></script>
+</body>
+</html>
